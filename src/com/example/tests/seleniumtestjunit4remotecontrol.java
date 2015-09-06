@@ -12,6 +12,8 @@ public class seleniumtestjunit4remotecontrol {
 	public void setUp() throws Exception {
 		selenium = new DefaultSelenium("localhost", 4444, "*chrome", "https://www.google.com.ua/");
 		selenium.start();
+		selenium.windowFocus();
+		selenium.windowMaximize();
 	}
 
 	@Test
@@ -19,7 +21,7 @@ public class seleniumtestjunit4remotecontrol {
 		selenium.open("");
 		selenium.type("id=lst-ib", "обучение собак");
 		selenium.click("name=btnG");
-		selenium.waitForPageToLoad("3000");
+		selenium.waitForPageToLoad("3");
 	}
 
 	@After
