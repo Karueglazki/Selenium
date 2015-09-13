@@ -53,12 +53,12 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.tests.SeleniumtestNG1" hash-for-method="testGoogle">testGoogle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.tests.SeleniumtestNG1" hash-for-method="testGoogle">testGoogle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.example.tests.SeleniumtestNG" hash-for-method="testpresentain">testpresentain</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -134,6 +144,13 @@
                   <span class="method-name">testpresentain</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testpresentain">
+                  </a> <!-- testpresentain -->
+                  <span class="method-name">testpresentain</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
           <div class="suite-Default_suite-class-passed">
@@ -149,25 +166,49 @@
                   <span class="method-name">testGoogle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGoogle">
+                  </a> <!-- testGoogle -->
+                  <span class="method-name">testGoogle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--386391361/testng-customsuite.xml</span>
+            <span class="header-content">/home/sandra/Documents/AutomationTest/workspace-selenium/selenium-test/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Default suite&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;*firefox&quot;/&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;fast&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+  &lt;test name=&quot;packages&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.example.tests&quot;/&gt;
+    &lt;/packages&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.example.tests.SeleniumtestNG1&quot;/&gt;
       &lt;class name=&quot;com.example.tests.SeleniumBase&quot;/&gt;
+      &lt;class name=&quot;com.example.tests.SeleniumtestNG&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- packages --&gt;
+  &lt;test name=&quot;classes&quot;&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;com.example.tests.SeleniumtestNG1&quot;/&gt;
       &lt;class name=&quot;com.example.tests.SeleniumtestNG&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
+  &lt;/test&gt; &lt;!-- classes --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -179,7 +220,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (3 classes)</span>
+                <span class="test-name">Default test (0 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">packages (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">classes (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -189,6 +236,14 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">fast</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testpresentain</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -205,20 +260,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testGoogle')
 data.setCell(0, 2, 'com.example.tests.SeleniumtestNG1')
-data.setCell(0, 3, 982);
+data.setCell(0, 3, 911);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testpresentain')
 data.setCell(1, 2, 'com.example.tests.SeleniumtestNG')
-data.setCell(1, 3, 878);
+data.setCell(1, 3, 883);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testpresentain')
+data.setCell(2, 2, 'com.example.tests.SeleniumtestNG')
+data.setCell(2, 3, 613);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testGoogle')
+data.setCell(3, 2, 'com.example.tests.SeleniumtestNG1')
+data.setCell(3, 3, 448);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -233,11 +296,11 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.example.tests.SeleniumtestNG</span>
+              <span class="ignored-class-name">com.example.tests.SeleniumBase</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
@@ -249,6 +312,10 @@ return data;
               <span class="ignored-class-name">com.example.tests.SeleniumtestNG1</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
                 <br/>
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -262,9 +329,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.example.tests.SeleniumBase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.example.tests.SeleniumtestNG</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">setUp(*firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
@@ -272,21 +339,32 @@ return data;
               <div class="chronological-class-name">com.example.tests.SeleniumtestNG1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testGoogle</span>
-                <span class="method-start">6656 ms</span>
+                <span class="method-start">6804 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.tests.SeleniumtestNG</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testpresentain</span>
-                <span class="method-start">7641 ms</span>
+                <span class="method-start">7717 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.example.tests.SeleniumBase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.example.tests.SeleniumtestNG1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testGoogle</span>
+                <span class="method-start">8605 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.tests.SeleniumtestNG</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testpresentain</span>
+                <span class="method-start">9054 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8545 ms</span>
+                <span class="method-start">9671 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

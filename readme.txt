@@ -10,4 +10,9 @@ java -jar selenium-server-standalone-2.46.0.jar
 selenium = new DefaultSelenium("ip_adress", 4444, "*chrome", "https://www.google.com.ua/");
 
 Конфиг файл.
-можно использовать теги group
+можно использовать теги groups и для тегов before
+создавать отдельные конфиги для разных тестовых писочниц 
+запускать тест если есть конфиг нужно:
+- запускать сам конфиг файл.
+
+

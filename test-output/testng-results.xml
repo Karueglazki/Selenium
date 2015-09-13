@@ -1,33 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1883" started-at="2015-09-13T11:16:47Z" finished-at="2015-09-13T11:16:49Z">
+  <suite name="Default suite" duration-ms="2925" started-at="2015-09-13T16:54:10Z" finished-at="2015-09-13T16:54:13Z">
     <groups>
+      <group name="fast">
+        <method signature="SeleniumtestNG.testpresentain()[pri:0, instance:com.example.tests.SeleniumtestNG@4f652035]" name="testpresentain" class="com.example.tests.SeleniumtestNG"/>
+        <method signature="SeleniumtestNG.testpresentain()[pri:0, instance:com.example.tests.SeleniumtestNG@dabb176]" name="testpresentain" class="com.example.tests.SeleniumtestNG"/>
+      </group> <!-- fast -->
     </groups>
-    <test name="Default test" duration-ms="1883" started-at="2015-09-13T11:16:47Z" finished-at="2015-09-13T11:16:49Z">
+    <test name="Default test" duration-ms="12" started-at="2015-09-13T16:54:10Z" finished-at="2015-09-13T16:54:10Z">
+    </test> <!-- Default test -->
+    <test name="packages" duration-ms="1804" started-at="2015-09-13T16:54:10Z" finished-at="2015-09-13T16:54:12Z">
       <class name="com.example.tests.SeleniumtestNG1">
-        <test-method status="PASS" signature="testGoogle()[pri:0, instance:com.example.tests.SeleniumtestNG1@5e7e6ceb]" name="testGoogle" duration-ms="982" started-at="2015-09-13T14:16:47Z" finished-at="2015-09-13T14:16:48Z">
+        <test-method status="PASS" signature="testGoogle()[pri:0, instance:com.example.tests.SeleniumtestNG1@313c7b52]" name="testGoogle" duration-ms="911" started-at="2015-09-13T19:54:10Z" finished-at="2015-09-13T19:54:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoogle -->
       </class> <!-- com.example.tests.SeleniumtestNG1 -->
       <class name="com.example.tests.SeleniumtestNG">
-        <test-method status="PASS" signature="testpresentain()[pri:0, instance:com.example.tests.SeleniumtestNG@1f26261c]" name="testpresentain" duration-ms="878" started-at="2015-09-13T14:16:48Z" finished-at="2015-09-13T14:16:49Z">
+        <test-method status="PASS" signature="testpresentain()[pri:0, instance:com.example.tests.SeleniumtestNG@4f652035]" name="testpresentain" duration-ms="883" started-at="2015-09-13T19:54:11Z" finished-at="2015-09-13T19:54:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testpresentain -->
       </class> <!-- com.example.tests.SeleniumtestNG -->
-      <class name="com.example.tests.SeleniumBase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.SeleniumBase@24c6af24]" name="setUp" is-config="true" duration-ms="6635" started-at="2015-09-13T14:16:40Z" finished-at="2015-09-13T14:16:47Z">
+    </test> <!-- packages -->
+    <test name="classes" duration-ms="1064" started-at="2015-09-13T16:54:12Z" finished-at="2015-09-13T16:54:13Z">
+      <class name="com.example.tests.SeleniumtestNG1">
+        <test-method status="PASS" signature="testGoogle()[pri:0, instance:com.example.tests.SeleniumtestNG1@30fc0fd]" name="testGoogle" duration-ms="448" started-at="2015-09-13T19:54:12Z" finished-at="2015-09-13T19:54:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle -->
+      </class> <!-- com.example.tests.SeleniumtestNG1 -->
+      <class name="com.example.tests.SeleniumtestNG">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.example.tests.SeleniumtestNG@dabb176]" name="setUp" is-config="true" duration-ms="6741" started-at="2015-09-13T19:54:03Z" finished-at="2015-09-13T19:54:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[*firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.SeleniumBase@24c6af24]" name="tearDown" is-config="true" duration-ms="58" started-at="2015-09-13T14:16:49Z" finished-at="2015-09-13T14:16:49Z">
+        <test-method status="PASS" signature="testpresentain()[pri:0, instance:com.example.tests.SeleniumtestNG@dabb176]" name="testpresentain" duration-ms="613" started-at="2015-09-13T19:54:12Z" finished-at="2015-09-13T19:54:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testpresentain -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.SeleniumtestNG@dabb176]" name="tearDown" is-config="true" duration-ms="61" started-at="2015-09-13T19:54:13Z" finished-at="2015-09-13T19:54:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.tests.SeleniumBase -->
-    </test> <!-- Default test -->
+      </class> <!-- com.example.tests.SeleniumtestNG -->
+    </test> <!-- classes -->
   </suite> <!-- Default suite -->
 </testng-results>
