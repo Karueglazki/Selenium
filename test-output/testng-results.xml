@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1883" started-at="2015-09-13T11:16:47Z" finished-at="2015-09-13T11:16:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1883" started-at="2015-09-13T11:16:47Z" finished-at="2015-09-13T11:16:49Z">
+      <class name="com.example.tests.SeleniumtestNG1">
+        <test-method status="PASS" signature="testGoogle()[pri:0, instance:com.example.tests.SeleniumtestNG1@5e7e6ceb]" name="testGoogle" duration-ms="982" started-at="2015-09-13T14:16:47Z" finished-at="2015-09-13T14:16:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle -->
+      </class> <!-- com.example.tests.SeleniumtestNG1 -->
+      <class name="com.example.tests.SeleniumtestNG">
+        <test-method status="PASS" signature="testpresentain()[pri:0, instance:com.example.tests.SeleniumtestNG@1f26261c]" name="testpresentain" duration-ms="878" started-at="2015-09-13T14:16:48Z" finished-at="2015-09-13T14:16:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testpresentain -->
+      </class> <!-- com.example.tests.SeleniumtestNG -->
+      <class name="com.example.tests.SeleniumBase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.SeleniumBase@24c6af24]" name="setUp" is-config="true" duration-ms="6635" started-at="2015-09-13T14:16:40Z" finished-at="2015-09-13T14:16:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.SeleniumBase@24c6af24]" name="tearDown" is-config="true" duration-ms="58" started-at="2015-09-13T14:16:49Z" finished-at="2015-09-13T14:16:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.tests.SeleniumBase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
