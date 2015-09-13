@@ -8,3 +8,6 @@ java -jar selenium-server-standalone-2.46.0.jar
 - запустить на тестовой машине, селениум сервер
 - указан в определении сервера имя удаленной машины вместо localhost
 selenium = new DefaultSelenium("ip_adress", 4444, "*chrome", "https://www.google.com.ua/");
+
+Конфиг файл.
+можно использовать теги group
