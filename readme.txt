@@ -16,3 +16,7 @@ selenium = new DefaultSelenium("ip_adress", 4444, "*chrome", "https://www.google
 - запускать сам конфиг файл.
 
 
+Что бы запустить паралельно
+1.указываем паарметры в настройках:
+"<suite name="Default suite" parallel="classes" thread-count="2">"
+2. в настройках запуска браузера указываем  верный тег 	@AfterClass в зависимости что указано в паралель в настрйоках
